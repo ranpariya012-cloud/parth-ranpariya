@@ -1,0 +1,2915 @@
+parth<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Ranpariya | Data Analyst & SQL Developer Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Parth Ranpariya — Data Analyst, SQL Developer & Power BI Developer from Ahmedabad, India. Skilled in SQL, Python, Power BI, Tableau, Excel & Business Intelligence.">
+    <meta name="keywords"
+        content="Parth Ranpariya, Data Analyst, SQL Developer, Power BI, Python, Business Intelligence, Ahmedabad, Portfolio">
+    <meta name="author" content="Parth Ranpariya">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0B1120">
+    <link rel="canonical" href="https://parthranpariya.com/">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Parth Ranpariya | Data Analyst & SQL Developer">
+    <meta property="og:description"
+        content="Data Analyst skilled in SQL, Python, Power BI, Tableau & Excel. Building professional dashboards & business intelligence solutions.">
+    <meta property="og:url" content="https://parthranpariya.com/">
+    <meta property="og:image" content="https://parthranpariya.com/assets/images/profile.jpg">
+    <meta property="og:site_name" content="Parth Ranpariya Portfolio">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Parth Ranpariya | Data Analyst & SQL Developer">
+    <meta name="twitter:description" content="Data Analyst skilled in SQL, Python, Power BI, Tableau & Excel.">
+    <meta name="twitter:image" content="https://parthranpariya.com/assets/images/profile.jpg">
+
+    <!-- Favicon (SVG) -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1120'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='bold' text-anchor='middle' fill='%233B82F6'%3EPR%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* ==================== CSS VARIABLES ==================== */
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0B1120;
+            --bg-card: rgba(11, 17, 32, 0.75);
+            --primary: #2563EB;
+            --accent: #3B82F6;
+            --purple: #8B5CF6;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B8C8;
+            --text-muted: #6B7280;
+
+            --gradient-blue: linear-gradient(135deg, #2563EB, #3B82F6);
+            --gradient-purple: linear-gradient(135deg, #8B5CF6, #6D28D9);
+            --gradient-text: linear-gradient(135deg, #3B82F6, #8B5CF6);
+
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+            --font-poppins: 'Poppins', sans-serif;
+            --font-inter: 'Inter', sans-serif;
+            --font-outfit: 'Outfit', sans-serif;
+            --font-grotesk: 'Space Grotesk', sans-serif;
+
+            --section-padding: 80px;
+            --border-radius-sm: 12px;
+            --border-radius-md: 20px;
+            --border-radius-lg: 30px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ==================== GLOBAL RESET ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-inter);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-blue);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--purple);
+        }
+
+        ::selection {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        /* Loader */
+        .loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        .loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .loader-content {
+            text-align: center;
+        }
+
+        .loader-logo {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .loader-letter {
+            font-family: var(--font-outfit);
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary);
+            animation: loaderPulse 1s infinite alternate;
+        }
+
+        .loader-letter:last-child {
+            animation-delay: 0.3s;
+            color: var(--purple);
+        }
+
+        @keyframes loaderPulse {
+            0% {
+                opacity: 0.3;
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        .loader-bar {
+            width: 200px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 auto 15px;
+        }
+
+        .loader-bar-fill {
+            width: 0%;
+            height: 100%;
+            background: var(--gradient-blue);
+            border-radius: 10px;
+            animation: loaderFill 1.5s ease-in-out infinite;
+        }
+
+        @keyframes loaderFill {
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 70%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .loader-text {
+            font-family: var(--font-poppins);
+            color: var(--text-secondary);
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            z-index: 99998;
+            background: transparent;
+        }
+
+        .scroll-progress-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--gradient-blue);
+            border-radius: 0 2px 2px 0;
+            transition: width 0.1s linear;
+        }
+
+        /* Custom Cursor (desktop only) */
+        .custom-cursor,
+        .cursor-glow {
+            display: none;
+        }
+
+        @media (min-width:1024px) {
+            .custom-cursor {
+                position: fixed;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: var(--accent);
+                pointer-events: none;
+                z-index: 99997;
+                transform: translate(-50%, -50%);
+                transition: width 0.2s, height 0.2s;
+                display: block;
+            }
+
+            .cursor-glow {
+                position: fixed;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 99996;
+                background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease;
+                display: block;
+            }
+        }
+
+        /* Particle Canvas */
+        .particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        /* Floating Shapes */
+        .floating-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.25;
+            animation: floatShape 20s infinite ease-in-out;
+        }
+
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            top: -100px;
+            right: -100px;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            background: var(--purple);
+            bottom: -50px;
+            left: -50px;
+            animation-delay: 4s;
+        }
+
+        .shape-3 {
+            width: 250px;
+            height: 250px;
+            background: #1E40AF;
+            top: 40%;
+            left: 20%;
+            animation-delay: 8s;
+        }
+
+        .shape-4 {
+            width: 200px;
+            height: 200px;
+            background: #6D28D9;
+            top: 10%;
+            left: 60%;
+            animation-delay: 12s;
+        }
+
+        .shape-5 {
+            width: 350px;
+            height: 350px;
+            background: #1E3A5F;
+            bottom: 20%;
+            right: 10%;
+            animation-delay: 16s;
+        }
+
+        .shape-6 {
+            width: 180px;
+            height: 180px;
+            background: rgba(37, 99, 235, 0.4);
+            top: 60%;
+            left: 5%;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatShape {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(50px, -30px) scale(1.05);
+            }
+
+            50% {
+                transform: translate(-30px, 40px) scale(0.95);
+            }
+
+            75% {
+                transform: translate(20px, -20px) scale(1.02);
+            }
+        }
+
+        /* Navbar */
+        .glass-navbar {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .glass-navbar.scrolled {
+            padding: 8px 0;
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            font-family: var(--font-outfit);
+            font-weight: 800;
+            font-size: 24px;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .brand-text {
+            letter-spacing: -0.5px;
+        }
+
+        .brand-dot {
+            color: var(--accent);
+        }
+
+        .navbar-toggler {
+            border: 1px solid var(--glass-border);
+            padding: 8px 10px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .nav-link {
+            font-family: var(--font-poppins);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary) !important;
+            padding: 8px 16px !important;
+            transition: var(--transition);
+            position: relative;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--text-primary) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--gradient-blue);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 60%;
+        }
+
+        .btn-navbar {
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        /* Buttons */
+        .btn {
+            font-family: var(--font-poppins);
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            border-radius: 50px;
+            padding: 12px 28px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-blue);
+            border: none;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--gradient-blue);
+            box-shadow: 0 6px 30px rgba(37, 99, 235, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-accent {
+            background: var(--gradient-purple);
+            border: none;
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-accent:hover {
+            color: #fff;
+            box-shadow: 0 6px 30px rgba(139, 92, 246, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light {
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            background: transparent;
+        }
+
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .ripple-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ripple-btn .ripple-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(0);
+            animation: rippleAnim 0.6s ease-out;
+            pointer-events: none;
+        }
+
+        @keyframes rippleAnim {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* Sections */
+        .section-padding {
+            padding: var(--section-padding) 0;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-badge {
+            display: inline-block;
+            font-family: var(--font-poppins);
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            background: rgba(59, 130, 246, 0.1);
+            padding: 6px 20px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .section-title {
+            font-family: var(--font-outfit);
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .gradient-text {
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-blue);
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        /* Glass Card */
+        .glass-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-md);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 28px;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+            transform: translateY(-4px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .badge-pulse {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10B981;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .hero-hello {
+            font-family: var(--font-poppins);
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .hero-name {
+            font-family: var(--font-outfit);
+            font-size: clamp(36px, 6vw, 60px);
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .typing-container {
+            font-family: var(--font-poppins);
+            font-size: clamp(18px, 3vw, 26px);
+            font-weight: 600;
+            margin-bottom: 20px;
+            min-height: 40px;
+        }
+
+        .typing-prefix {
+            color: var(--text-secondary);
+            margin-right: 8px;
+        }
+
+        .typing-text {
+            color: var(--accent);
+        }
+
+        .typing-cursor {
+            color: var(--accent);
+            animation: blink 0.8s infinite;
+            font-weight: 300;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .hero-description {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 550px;
+            margin-bottom: 28px;
+            line-height: 1.8;
+        }
+
+        .text-highlight {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .hero-socials {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            font-size: 18px;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        .hero-location {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-left: 8px;
+        }
+
+        .hero-location i {
+            color: #F59E0B;
+        }
+
+        /* Hero Image */
+        .hero-image-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-image-wrapper {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-image-circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: var(--gradient-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            z-index: 2;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-initials {
+            font-family: var(--font-outfit);
+            font-size: 72px;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -2px;
+        }
+
+        .profile-status-dot {
+            position: absolute;
+            bottom: 18px;
+            right: 18px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #10B981;
+            border: 3px solid #000;
+        }
+
+        .profile-glow-ring {
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            animation: ringPulse 3s infinite;
+        }
+
+        @keyframes ringPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+        }
+
+        .profile-orbit-ring {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 1px dashed rgba(139, 92, 246, 0.3);
+            animation: orbitSpin 15s linear infinite;
+        }
+
+        .orbit-2 {
+            width: 320px;
+            height: 320px;
+            animation-direction: reverse;
+            animation-duration: 20s;
+            border-color: rgba(59, 130, 246, 0.2);
+        }
+
+        @keyframes orbitSpin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Scroll Down */
+        .scroll-down-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        .scroll-down-indicator:hover {
+            color: var(--text-primary);
+        }
+
+        .mouse-icon {
+            width: 26px;
+            height: 40px;
+            border: 2px solid var(--text-muted);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            padding-top: 6px;
+        }
+
+        .mouse-wheel {
+            width: 3px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 3px;
+            animation: scrollWheel 1.5s infinite;
+        }
+
+        @keyframes scrollWheel {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+        }
+
+        /* About */
+        .about-card {
+            height: 100%;
+            padding: 30px;
+        }
+
+        .about-card-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 16px;
+            background: var(--gradient-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+        }
+
+        .about-card-title {
+            font-family: var(--font-outfit);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .about-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .about-list li:last-child {
+            border-bottom: none;
+        }
+
+        .about-list li strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .about-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .about-highlight-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        /* Timeline */
+        .timeline-wrapper {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 24px;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary), var(--purple), transparent);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -23px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 12px rgba(37, 99, 235, 0.6);
+        }
+
+        .timeline-card {
+            padding: 24px;
+        }
+
+        .timeline-year {
+            font-family: var(--font-poppins);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-title {
+            font-family: var(--font-outfit);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .timeline-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .timeline-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Experience */
+        .experience-card {
+            padding: 24px;
+            height: 100%;
+        }
+
+        .experience-card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .experience-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--gradient-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .experience-title {
+            font-family: var(--font-outfit);
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .experience-company {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 2px 0 0;
+        }
+
+        .experience-badge {
+            margin-left: auto;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 50px;
+            background: rgba(16, 185, 129, 0.1);
+            color: #10B981;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        .badge-internship {
+            background: rgba(245, 158, 11, 0.1);
+            color: #F59E0B;
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .badge-project {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--purple);
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .experience-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-chip {
+            font-size: 12px;
+            padding: 6px 14px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .skill-chip:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.4);
+            color: var(--accent);
+        }
+
+        /* Skills */
+        .skills-card {
+            padding: 28px;
+            height: 100%;
+        }
+
+        .skills-group-title {
+            font-family: var(--font-outfit);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .skills-group-title i {
+            color: var(--accent);
+        }
+
+        .skill-item {
+            margin-bottom: 16px;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .skill-percent {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .skill-bar {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--gradient-blue);
+            border-radius: 10px;
+            transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Projects */
+        .project-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 10px 22px;
+            border-radius: 50px;
+            border: 1px solid var(--glass-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: var(--font-poppins);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .filter-btn.active {
+            background: var(--gradient-blue);
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+        }
+
+        .project-card {
+            padding: 24px;
+            height: 100%;
+        }
+
+        .project-card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .project-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--gradient-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .project-category {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .project-title {
+            font-family: var(--font-outfit);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            line-height: 1.7;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        /* Certificates */
+        .certificate-card {
+            padding: 28px;
+            height: 100%;
+        }
+
+        .cert-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 18px;
+            background: var(--gradient-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: #fff;
+            margin: 0 auto 16px;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+        }
+
+        .cert-title {
+            font-family: var(--font-outfit);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .cert-issuer {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Why Hire Me */
+        .why-card {
+            padding: 24px;
+            height: 100%;
+        }
+
+        .why-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 16px;
+            background: var(--gradient-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            margin: 0 auto 16px;
+            box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
+        }
+
+        .why-title {
+            font-family: var(--font-outfit);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .why-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Statistics */
+        .stat-card {
+            padding: 24px 16px;
+            height: 100%;
+        }
+
+        .stat-number {
+            font-family: var(--font-outfit);
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 900;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Contact */
+        .contact-form-card,
+        .contact-info-card {
+            padding: 28px;
+            height: 100%;
+        }
+
+        .contact-form-title {
+            font-family: var(--font-outfit);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .contact-form .form-control {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            font-size: 14px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .contact-form .form-control:focus {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+            outline: none;
+        }
+
+        .contact-form label {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .contact-form .form-floating>.form-control {
+            height: 58px;
+        }
+
+        .contact-form .form-floating>textarea.form-control {
+            height: 140px;
+            resize: none;
+        }
+
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .contact-info-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .contact-info-item strong {
+            display: block;
+            font-size: 14px;
+            color: var(--text-primary);
+        }
+
+        .contact-info-item p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .contact-map-placeholder {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+
+        .contact-socials {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        /* Footer */
+        .footer-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--glass-border);
+            padding: 30px 0;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .heart-icon {
+            color: #EF4444;
+            animation: heartBeat 1.5s infinite;
+        }
+
+        @keyframes heartBeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .footer-name {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .footer-divider {
+            width: 50px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 16px auto;
+        }
+
+        .footer-copyright {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gradient-blue);
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.5);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 28px rgba(37, 99, 235, 0.7);
+        }
+
+        /* Reveal Animation */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (min-width:576px) {
+            :root {
+                --section-padding: 90px;
+            }
+
+            .profile-image-wrapper {
+                width: 320px;
+                height: 320px;
+            }
+
+            .profile-image-circle {
+                width: 280px;
+                height: 280px;
+            }
+
+            .profile-glow-ring {
+                width: 290px;
+                height: 290px;
+            }
+
+            .profile-orbit-ring {
+                width: 330px;
+                height: 330px;
+            }
+
+            .orbit-2 {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        @media (min-width:768px) {
+            :root {
+                --section-padding: 100px;
+            }
+
+            .glass-card {
+                padding: 32px;
+            }
+
+            .about-card {
+                padding: 36px;
+            }
+
+            .skills-card {
+                padding: 32px;
+            }
+
+            .profile-image-wrapper {
+                width: 360px;
+                height: 360px;
+            }
+
+            .profile-image-circle {
+                width: 320px;
+                height: 320px;
+            }
+
+            .profile-initials {
+                font-size: 80px;
+            }
+
+            .profile-glow-ring {
+                width: 330px;
+                height: 330px;
+            }
+
+            .profile-orbit-ring {
+                width: 370px;
+                height: 370px;
+            }
+
+            .orbit-2 {
+                width: 390px;
+                height: 390px;
+            }
+
+            .timeline-wrapper {
+                padding-left: 40px;
+            }
+
+            .timeline-line {
+                left: 12px;
+            }
+
+            .timeline-dot {
+                left: -31px;
+            }
+        }
+
+        @media (min-width:992px) {
+            :root {
+                --section-padding: 120px;
+            }
+
+            .hero-section {
+                padding-top: 60px;
+            }
+
+            .profile-image-wrapper {
+                width: 400px;
+                height: 400px;
+            }
+
+            .profile-image-circle {
+                width: 350px;
+                height: 350px;
+            }
+
+            .profile-glow-ring {
+                width: 360px;
+                height: 360px;
+            }
+
+            .profile-orbit-ring {
+                width: 400px;
+                height: 400px;
+            }
+
+            .orbit-2 {
+                width: 420px;
+                height: 420px;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .hero-name {
+                font-size: 64px;
+            }
+
+            .profile-image-wrapper {
+                width: 420px;
+                height: 420px;
+            }
+
+            .profile-image-circle {
+                width: 370px;
+                height: 370px;
+            }
+
+            .profile-glow-ring {
+                width: 380px;
+                height: 380px;
+            }
+
+            .profile-orbit-ring {
+                width: 420px;
+                height: 420px;
+            }
+
+            .orbit-2 {
+                width: 440px;
+                height: 440px;
+            }
+        }
+
+        @media (min-width:1400px) {
+            .profile-image-wrapper {
+                width: 450px;
+                height: 450px;
+            }
+
+            .profile-image-circle {
+                width: 400px;
+                height: 400px;
+            }
+
+            .profile-glow-ring {
+                width: 410px;
+                height: 410px;
+            }
+
+            .profile-orbit-ring {
+                width: 450px;
+                height: 450px;
+            }
+
+            .orbit-2 {
+                width: 470px;
+                height: 470px;
+            }
+        }
+
+        @media (max-width:575px) {
+            .navbar-brand {
+                font-size: 20px;
+            }
+
+            .nav-link {
+                font-size: 13px;
+                padding: 6px 12px !important;
+            }
+
+            .hero-buttons .btn {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+
+            .glass-card {
+                padding: 20px;
+                border-radius: 16px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .hero-name {
+                font-size: 34px;
+            }
+
+            .profile-image-wrapper {
+                width: 240px;
+                height: 240px;
+            }
+
+            .profile-image-circle {
+                width: 200px;
+                height: 200px;
+            }
+
+            .profile-initials {
+                font-size: 50px;
+            }
+
+            .profile-glow-ring {
+                width: 210px;
+                height: 210px;
+            }
+
+            .profile-orbit-ring {
+                width: 240px;
+                height: 240px;
+            }
+
+            .orbit-2 {
+                width: 250px;
+                height: 250px;
+            }
+
+            .scroll-down-indicator {
+                bottom: 15px;
+            }
+        }
+    </style>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Parth Ranpariya",
+        "jobTitle": "Data Analyst & SQL Developer",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "addressCountry": "India"
+        },
+        "email": "mailto:parthranpariya@email.com",
+        "knowsAbout": ["SQL", "Python", "Power BI", "Tableau", "Excel", "Business Intelligence"],
+        "alumniOf": "Gujarat University",
+        "worksFor": {"@type": "Organization", "name": "GRASS IT Solutions"}
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-letter">P</span>
+                <span class="loader-letter">R</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <p class="loader-text">Loading Portfolio<span class="loader-dots">...</span></p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress">
+        <div class="scroll-progress-fill" id="scrollProgressFill"></div>
+    </div>
+
+    <!-- Custom Cursor (desktop) -->
+    <div id="customCursor" class="custom-cursor"></div>
+    <div id="cursorGlow" class="cursor-glow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><span class="brand-text">Parth<span
+                        class="brand-dot">.</span></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Black and White Modern Professional Resume.pdf" class="btn btn-primary btn-navbar ripple-btn" download>
+                            <i class="fas fa-download me-2"></i>Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-7 col-md-12 hero-text-side">
+                    <div class="hero-badge reveal-element">
+                        <span class="badge-pulse"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
+                    <p class="hero-hello reveal-element">Hello, I'm</p>
+                    <h1 class="hero-name reveal-element">Parth <span class="gradient-text">Ranpariya</span></h1>
+                    <div class="typing-container reveal-element">
+                        <span class="typing-prefix">I'm a</span>
+                        <span id="typingText" class="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-description reveal-element">
+                        Passionate Data Analyst specializing in <strong class="text-highlight">SQL</strong>,
+                        <strong class="text-highlight">Power BI</strong>, and <strong
+                            class="text-highlight">Python</strong> — transforming raw data into actionable business
+                        intelligence.
+                    </p>
+                    <div class="hero-buttons reveal-element">
+                        <a href="Black and White Modern Professional Resume.pdf" class="btn btn-primary btn-lg ripple-btn me-3" download>
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg ripple-btn me-3">View Projects</a>
+                        <a href="#contact" class="btn btn-accent btn-lg ripple-btn">Hire Me</a>
+                    </div>
+                    <div class="hero-socials reveal-element">
+                        <a href="https://linkedin.com/in/ranpariya-parth-01693b3a8" target="_blank" rel="noopener"
+                            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/parthranpariya" target="_blank" rel="noopener"
+                            class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="mailto:ranpariya012@email.com" class="social-icon"><i
+                                class="fas fa-envelope"></i></a>
+                        <div class="hero-location ms-2">
+                            <i class="fas fa-map-marker-alt me-1"></i><span>Ahmedabad, Gujarat, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 hero-image-side">
+                    <div class="profile-image-wrapper reveal-element">
+                        <img src="2P5A9283.JPG" alt="Parth Ranpariya - Data Analyst" class="profile-img"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.profile-initials').style.display='block';">
+                        <span class="profile-initials" style="display:none;">PR</span>
+                        <span class="profile-status-dot" title="Available"></span>
+                        <div class="profile-glow-ring"></div>
+                        <div class="profile-orbit-ring"></div>
+                        <div class="profile-orbit-ring orbit-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down-indicator">
+            <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+            <span class="scroll-text">Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">About Me</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Summary</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-5 reveal-element">
+                    <div class="about-card glass-card h-100">
+                        <div class="about-card-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="about-card-title">Education & Background</h3>
+                        <ul class="about-list">
+                            <li><strong>Degree:</strong> BCA</li>
+                            <li><strong>University:</strong> Gujarat University</li>
+                            <li><strong>10th & 12th:</strong> Shree Dharmajivan Swami School</li>
+                            <li><strong>Current:</strong> Data Analytics Trainee, GRASS IT Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal-element">
+                    <div class="about-card glass-card h-100">
+                        <div class="about-card-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3 class="about-card-title">Career Objective</h3>
+                        <p class="about-text">
+                            Passionate Data Analyst skilled in <strong>SQL, Excel, Power BI, Python, and
+                                Tableau</strong> with strong problem-solving abilities. Eager to leverage analytical
+                            skills to drive data-informed decisions and build impactful dashboards.
+                        </p>
+                        <div class="about-highlight-tags">
+                            <span class="tag">SQL Expert</span>
+                            <span class="tag">Dashboard Developer</span>
+                            <span class="tag">Business Intelligence</span>
+                            <span class="tag">Data Analytics</span>
+                            <span class="tag">Problem Solver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="education-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Education</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline-wrapper mt-5">
+                <div class="timeline-line"></div>
+                <div class="timeline-item reveal-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-year">2021 — 2024</div>
+                        <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+                        <p class="timeline-subtitle">Gujarat University</p>
+                        <p class="timeline-desc">Comprehensive study of computer science, programming, and database
+                            management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-year">2019 — 2021</div>
+                        <h3 class="timeline-title">Higher Secondary (12th)</h3>
+                        <p class="timeline-subtitle">Shree Dharmajivan Swami School</p>
+                        <p class="timeline-desc">Science and mathematics focus, developing analytical thinking.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-year">2017 — 2019</div>
+                        <h3 class="timeline-title">Secondary (10th)</h3>
+                        <p class="timeline-subtitle">Shree Dharmajivan Swami School</p>
+                        <p class="timeline-desc">Strong academic performance, foundation in mathematics and logic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Experience</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-7 reveal-element">
+                    <div class="experience-card glass-card h-100">
+                        <div class="experience-card-header">
+                            <div class="experience-icon"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h3 class="experience-title">Data Analytics Trainee</h3>
+                                <p class="experience-company">GRASS IT Solutions</p>
+                            </div>
+                            <span class="experience-badge">Current</span>
+                        </div>
+                        <div class="experience-skills">
+                            <span class="skill-chip">SQL</span><span class="skill-chip">Excel</span><span
+                                class="skill-chip">Statistics</span>
+                            <span class="skill-chip">Power BI</span><span class="skill-chip">Python</span><span
+                                class="skill-chip">Tableau</span>
+                            <span class="skill-chip">Business Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 reveal-element">
+                    <div class="experience-card glass-card h-100">
+                        <div class="experience-card-header">
+                            <div class="experience-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div>
+                                <h3 class="experience-title">Web Development Intern</h3>
+                                <p class="experience-company">Augmetic Info Pvt. Ltd.</p>
+                            </div>
+                            <span class="experience-badge badge-internship">Internship</span>
+                        </div>
+                        <div class="experience-skills">
+                            <span class="skill-chip">Website Development</span><span class="skill-chip">Responsive
+                                Design</span>
+                            <span class="skill-chip">Frontend Development</span><span class="skill-chip">Professional
+                                UI</span>
+                            <span class="skill-chip">Business Websites</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 reveal-element">
+                    <div class="experience-card glass-card">
+                        <div class="experience-card-header">
+                            <div class="experience-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <div>
+                                <h3 class="experience-title">Furniture E-Commerce Website</h3>
+                                <p class="experience-company">College Project — Sunrise Info Tech</p>
+                            </div>
+                            <span class="experience-badge badge-project">Project</span>
+                        </div>
+                        <div class="experience-skills">
+                            <span class="skill-chip">Shopping Cart</span><span class="skill-chip">Admin Panel</span>
+                            <span class="skill-chip">Product Management</span><span class="skill-chip">Responsive
+                                Design</span>
+                            <span class="skill-chip">Bootstrap</span><span class="skill-chip">Modern UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Skills</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-6 reveal-element">
+                    <div class="skills-card glass-card h-100">
+                        <h3 class="skills-group-title"><i class="fas fa-code me-2"></i>Programming</h3>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info"><span>HTML</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info"><span>CSS</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info"><span>JavaScript</span><span class="skill-percent">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info"><span>Bootstrap</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info"><span>Python</span><span class="skill-percent">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-element">
+                    <div class="skills-card glass-card h-100">
+                        <h3 class="skills-group-title"><i class="fas fa-database me-2"></i>Database</h3>
+                        <div class="skill-item" data-skill="92">
+                            <div class="skill-info"><span>SQL</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-info"><span>MySQL</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-info"><span>Stored Procedures</span><span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="78">
+                            <div class="skill-info"><span>Triggers & Views</span><span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-element">
+                    <div class="skills-card glass-card h-100">
+                        <h3 class="skills-group-title"><i class="fas fa-chart-bar me-2"></i>Analytics</h3>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-info"><span>Power BI</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info"><span>Excel</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info"><span>Statistics</span><span class="skill-percent">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="78">
+                            <div class="skill-info"><span>Tableau</span><span class="skill-percent">78%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-info"><span>Business Intelligence</span><span
+                                    class="skill-percent">82%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-element">
+                    <div class="skills-card glass-card h-100">
+                        <h3 class="skills-group-title"><i class="fas fa-tools me-2"></i>Other Skills</h3>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info"><span>Responsive Design</span><span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info"><span>Git & GitHub</span><span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info"><span>Shopify Store Development</span><span
+                                    class="skill-percent">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="78">
+                            <div class="skill-info"><span>AI Website Development</span><span
+                                    class="skill-percent">78%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info"><span>Data Cleaning</span><span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-info"><span>Dashboard Creation</span><span
+                                    class="skill-percent">82%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-info"><span>Problem Solving</span><span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="project-filters text-center mt-4 reveal-element">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+            </div>
+            <div class="row g-4 mt-4" id="projectsContainer">
+                <div class="col-lg-6 col-md-6 project-item reveal-element" data-category="sql database">
+                    <div class="project-card glass-card h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-database"></i></div>
+                            <span class="project-category">SQL Database</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce SQL Database</h3>
+                        <p class="project-desc">Complete e-commerce database with customers, products, orders, and
+                            advanced SQL features.</p>
+                        <div class="project-tech">
+                            <span class="skill-chip">Views</span><span class="skill-chip">Joins</span><span
+                                class="skill-chip">Stored Procedures</span>
+                            <span class="skill-chip">Triggers</span><span class="skill-chip">Window Functions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 project-item reveal-element" data-category="sql database">
+                    <div class="project-card glass-card h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-landmark"></i></div>
+                            <span class="project-category">SQL Database</span>
+                        </div>
+                        <h3 class="project-title">Banking SQL Database</h3>
+                        <p class="project-desc">Robust banking database with customers, accounts, transactions, and
+                            complex analytical queries.</p>
+                        <div class="project-tech">
+                            <span class="skill-chip">Complex Queries</span><span class="skill-chip">Views</span><span
+                                class="skill-chip">Reports</span>
+                            <span class="skill-chip">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 project-item reveal-element" data-category="sql database">
+                    <div class="project-card glass-card h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-plane"></i></div>
+                            <span class="project-category">SQL Database</span>
+                        </div>
+                        <h3 class="project-title">Travel Booking SQL Database</h3>
+                        <p class="project-desc">Travel booking system with flights, bookings, customers, payments, and
+                            detailed reports.</p>
+                        <div class="project-tech">
+                            <span class="skill-chip">Flights</span><span class="skill-chip">Bookings</span><span
+                                class="skill-chip">Customers</span>
+                            <span class="skill-chip">Payments</span><span class="skill-chip">Reports</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 project-item reveal-element" data-category="web database">
+                    <div class="project-card glass-card h-100">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fas fa-couch"></i></div>
+                            <span class="project-category">Web Development</span>
+                        </div>
+                        <h3 class="project-title">Furniture Website</h3>
+                        <p class="project-desc">Modern e-commerce furniture website with responsive design and
+                            comprehensive admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="skill-chip">Bootstrap</span><span class="skill-chip">Responsive</span><span
+                                class="skill-chip">Admin Dashboard</span>
+                            <span class="skill-chip">Modern Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Certificates</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="certificate-card glass-card text-center h-100">
+                        <div class="cert-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3 class="cert-title">Data Analytics</h3>
+                        <p class="cert-issuer">GRASS IT Solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="certificate-card glass-card text-center h-100">
+                        <div class="cert-icon"><i class="fas fa-database"></i></div>
+                        <h3 class="cert-title">SQL</h3>
+                        <p class="cert-issuer">GRASS IT Solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="certificate-card glass-card text-center h-100">
+                        <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3 class="cert-title">Power BI</h3>
+                        <p class="cert-issuer">GRASS IT Solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="certificate-card glass-card text-center h-100">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <h3 class="cert-title">Python</h3>
+                        <p class="cert-issuer">GRASS IT Solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="certificate-card glass-card text-center h-100">
+                        <div class="cert-icon"><i class="fas fa-file-excel"></i></div>
+                        <h3 class="cert-title">Excel</h3>
+                        <p class="cert-issuer">GRASS IT Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section id="why-hire-me" class="why-hire-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Why Hire Me</span>
+                <h2 class="section-title">What Makes Me <span class="gradient-text">Stand Out</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                        <h3 class="why-title">Fast Learner</h3>
+                        <p class="why-desc">Quickly adapts to new technologies and tools.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-brain"></i></div>
+                        <h3 class="why-title">Analytical Thinker</h3>
+                        <p class="why-desc">Breaks down complex problems into insights.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-database"></i></div>
+                        <h3 class="why-title">Strong SQL Skills</h3>
+                        <p class="why-desc">Proficient in complex queries and optimization.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="why-title">Dashboard Expert</h3>
+                        <p class="why-desc">Creates compelling Power BI and Tableau dashboards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <h3 class="why-title">Problem Solver</h3>
+                        <p class="why-desc">Turns business challenges into data solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="why-title">Web Developer</h3>
+                        <p class="why-desc">Builds professional, responsive websites.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="why-title">Team Player</h3>
+                        <p class="why-desc">Collaborates effectively to achieve shared goals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal-element">
+                    <div class="why-card glass-card h-100 text-center">
+                        <div class="why-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 class="why-title">Self-Motivated</h3>
+                        <p class="why-desc">Driven by curiosity and continuous learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="stats-section section-padding">
+        <div class="container">
+            <div class="row g-4 reveal-element">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="stat-card glass-card text-center">
+                        <div class="stat-number" data-target="10">0</div>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="stat-card glass-card text-center">
+                        <div class="stat-number" data-target="2">0</div>
+                        <p class="stat-label">Internships</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="stat-card glass-card text-center">
+                        <div class="stat-number" data-target="5">0</div>
+                        <p class="stat-label">Certificates</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="stat-card glass-card text-center">
+                        <div class="stat-number" data-target="15">0</div>
+                        <p class="stat-label">Skills</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="stat-card glass-card text-center">
+                        <div class="stat-number" data-target="1200">0</div>
+                        <p class="stat-label">Learning Hours</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="stat-card glass-card text-center">
+                        <div class="stat-number" data-target="100">0</div>
+                        <p class="stat-label">Problem Solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-6 reveal-element">
+                    <div class="contact-form-card glass-card h-100">
+                        <h3 class="contact-form-title">Send a Message</h3>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="contactName" placeholder="Your Name"
+                                    required>
+                                <label for="contactName"><i class="fas fa-user me-2"></i>Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="contactEmail"
+                                    placeholder="name@example.com" required>
+                                <label for="contactEmail"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="contactPhone" placeholder="Phone Number">
+                                <label for="contactPhone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="contactMessage" placeholder="Your Message"
+                                    style="height: 140px" required></textarea>
+                                <label for="contactMessage"><i class="fas fa-comment me-2"></i>Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100 ripple-btn">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-element">
+                    <div class="contact-info-card glass-card h-100">
+                        <h3 class="contact-form-title">Contact Information</h3>
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div><strong>Location</strong>
+                                    <p>Ahmedabad, Gujarat, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                                <div><strong>Email</strong>
+                                    <p>parthranpariya@email.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+                                <div><strong>LinkedIn</strong>
+                                    <p>linkedin.com/in/parthranpariya</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+                                <div><strong>GitHub</strong>
+                                    <p>github.com/parthranpariya</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-map-placeholder mt-4">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.2168258924!2d72.50556125!3d23.02250595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                width="100%" height="250"
+                                style="border:0; border-radius:16px; filter: invert(90%) hue-rotate(180deg);"
+                                allowfullscreen="" loading="lazy" title="Ahmedabad Location Map"></iframe>
+                        </div>
+                        <div class="contact-socials mt-3">
+                            <a href="https://linkedin.com/in/parthranpariya" class="social-icon"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/parthranpariya" class="social-icon"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="mailto:parthranpariya@email.com" class="social-icon"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="footer-text mb-0">Designed with <span class="heart-icon">❤️</span> by <strong
+                        class="footer-name">Parth Ranpariya</strong></p>
+                <div class="footer-divider"></div>
+                <p class="footer-copyright mb-0">&copy; 2026 Parth Ranpariya. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>/* =====================================================
+   PORTFOLIO WEBSITE - MAIN JAVASCRIPT
+   Author: Parth Ranpariya
+   Description: Handles loader, cursor, particles,
+   typing animation, scroll effects, counters, etc.
+   ===================================================== */
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    // ==================== LOADER ====================
+    const loader = document.getElementById('loader');
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 800);
+    });
+
+    // ==================== SCROLL PROGRESS BAR ====================
+    const progressFill = document.getElementById('scrollProgressFill');
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        progressFill.style.width = progress + '%';
+    });
+
+    // ==================== NAVBAR SCROLL EFFECT ====================
+    const navbar = document.getElementById('mainNavbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // ==================== ACTIVE NAV LINK ON SCROLL ====================
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // ==================== CUSTOM CURSOR (desktop only) ====================
+    const cursor = document.getElementById('customCursor');
+    const cursorGlow = document.getElementById('cursorGlow');
+    if (window.innerWidth > 1024) {
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+    }
+
+    // ==================== TYPING ANIMATION ====================
+    const typingElement = document.getElementById('typingText');
+    const roles = [
+        'Data Analyst',
+        'SQL Developer',
+        'Power BI Developer',
+        'Dashboard Developer',
+        'Business Intelligence Specialist'
+    ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeLoop() {
+        const currentRole = roles[roleIndex];
+        if (isDeleting) {
+            typingElement.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typeLoop, 500);
+                return;
+            }
+        } else {
+            typingElement.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === currentRole.length) {
+                isDeleting = true;
+                setTimeout(typeLoop, 2000);
+                return;
+            }
+        }
+        setTimeout(typeLoop, isDeleting ? 50 : 100);
+    }
+    typeLoop();
+
+    // ==================== PARTICLE BACKGROUND ====================
+    const canvas = document.getElementById('particleCanvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animationId;
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    class Particle {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 0.5;
+            this.speedX = (Math.random() - 0.5) * 0.5;
+            this.speedY = (Math.random() - 0.5) * 0.5;
+            this.opacity = Math.random() * 0.5 + 0.2;
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+            if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+            ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    function createParticles() {
+        const count = Math.min(100, window.innerWidth / 15);
+        particles = [];
+        for (let i = 0; i < count; i++) {
+            particles.push(new Particle());
+        }
+    }
+    createParticles();
+    window.addEventListener('resize', createParticles);
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+            p.update();
+            p.draw();
+        });
+        animationId = requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ==================== REVEAL ANIMATION ON SCROLL ====================
+    const revealElements = document.querySelectorAll('.reveal-element');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ==================== SKILL BAR ANIMATION ====================
+    const skillBars = document.querySelectorAll('.skill-item');
+    const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillItem = entry.target;
+                const percent = skillItem.dataset.skill;
+                const fill = skillItem.querySelector('.skill-bar-fill');
+                const percentText = skillItem.querySelector('.skill-percent');
+                fill.style.width = percent + '%';
+                percentText.textContent = percent + '%';
+                skillObserver.unobserve(skillItem);
+            }
+        });
+    }, { threshold: 0.5 });
+    skillBars.forEach(bar => skillObserver.observe(bar));
+
+    // ==================== COUNTER ANIMATION ====================
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.dataset.target);
+                let current = 0;
+                const increment = target / 60;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        el.textContent = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        el.textContent = target;
+                    }
+                };
+                updateCounter();
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+    statNumbers.forEach(num => counterObserver.observe(num));
+
+    // ==================== PROJECT FILTER ====================
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            projectItems.forEach(item => {
+                const category = item.dataset.category;
+                if (filter === 'all' || category.includes(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // ==================== RIPPLE EFFECT ====================
+    document.querySelectorAll('.ripple-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            const rect = this.getBoundingClientRect();
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple-circle');
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = e.clientX - rect.left - size / 2 + 'px';
+            ripple.style.top = e.clientY - rect.top - size / 2 + 'px';
+            this.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 600);
+        });
+    });
+
+    // ==================== BACK TO TOP BUTTON ====================
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ==================== CONTACT FORM HANDLER ====================
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('contactName').value.trim();
+        const email = document.getElementById('contactEmail').value.trim();
+        const message = document.getElementById('contactMessage').value.trim();
+        if (name && email && message) {
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        } else {
+            alert('Please fill in all required fields.');
+        }
+    });
+
+});</script>
+</body>
+
+</html>
